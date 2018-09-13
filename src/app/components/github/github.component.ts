@@ -8,6 +8,7 @@ import * as moment from 'moment';
   styleUrls: ['./github.component.scss']
 })
 export class GithubComponent implements OnInit {
+  username: any;
   user: any;
   users: any;
   repos: any;

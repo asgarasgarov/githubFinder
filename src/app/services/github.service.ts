@@ -19,6 +19,6 @@ export class GithubService {
   }
 
   getRepos(username) {
-    return this.httpClient.get(`https://api.github.com/users/${username}/repos?client_id=${this.client_id}&client_secret=$${this.client_secret}`);
+    return this.httpClient.get(`https://api.github.com/users/${username}/repos?client_id=${this.client_id}&client_secret=$${this.client_secret}&sort=created&order=asc`);
   }
 }

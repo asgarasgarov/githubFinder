@@ -329,3 +329,16 @@ $color-primary: #192a56;
 	}
 }
 // end of responsive of badges (repos info)
+
+@media screen and (max-width: 700px) {
+	.result {
+		&__user {
+			&--about {
+				ul {
+					width: auto;
+				}
+
+			}
+		}
+	}
+}

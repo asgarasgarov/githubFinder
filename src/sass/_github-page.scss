@@ -41,6 +41,9 @@
   .result__user {
     align-self: flex-start;
     position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     position: sticky;
     top: 6rem;
   }

@@ -8,12 +8,11 @@ import * as moment from 'moment';
   styleUrls: ['./github.component.scss']
 })
 export class GithubComponent implements OnInit {
-  username: any;
-  user: any;
-  users: any;
-  repos: any;
-  user_created_at: any;
-  repo_created_at: any;
+  username: string;
+  user: Object;
+  users: Array<Object>;
+  repos: Array<Object>;
+  user_created_at: string;
   // loader: boolean = false;
 
   constructor(private githubService: GithubService) { }
@@ -22,7 +21,7 @@ export class GithubComponent implements OnInit {
   }
 
   searchUser(event) {
-    let user = event.query; 
+    let user: string = event.query; 
     this.githubService.searchUser(user).subscribe((users:any) => {
       this.users = users.items;
     });

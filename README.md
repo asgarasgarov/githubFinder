@@ -1,13 +1,13 @@
 # GithubFinder App
 
-Search users and get the information about the user and his/her repos
+Search users and get the information about the user and his/her repos  
 This project was generated with [Angular CLI] version 6.2.1.
 
 ## Use this project
 
-1. Clone this git repo
-2. npm install
-3. ng serve
+1. Clone this git repo --> `git clone https://github.com/VugarAhmadov/githubFinder.git`
+2. `npm install`
+3. `ng serve`  
   It will run dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
